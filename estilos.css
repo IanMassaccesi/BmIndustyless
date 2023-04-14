@@ -20,6 +20,7 @@ html{
      scroll-behavior: smooth;
 }
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER  */
+@media(max-width:1920px){
 header{
     display: flex;
     justify-content: space-around;
@@ -51,10 +52,14 @@ nav a:hover{
     text-decoration: underline;
     color: var(--yellow);
 }
+.caja{
+    display: none;
+}
+}
 /* HEADER HEADER HEADER HEADER HEADER HEADER  HEADER */
 
-
 /* SECCION 1  SECCION 1  SECCION 1 SECCION 1  SECCION 1  SECCION 1 */
+@media(max-width:1920px){
 .sec1{
     height: 100%;
     background-color: var(--bgcolor);
@@ -100,10 +105,11 @@ nav a:hover{
     font-size: 1.3rem;
     font-weight: 600;
 }
-
+}
 /* SECCION 1  SECCION 1  SECCION 1 SECCION 1  SECCION 1  SECCION 1 */
 
 /* CARRUSEL *//* CARRUSEL *//* CARRUSEL *//* CARRUSEL */
+@media(max-width:1920px){
 .carrousel{
     margin: 0 auto;
     margin-top:1em;
@@ -175,6 +181,7 @@ nav a:hover{
 .g6{
     transform: translateX(-111.9%);
 }
+}
 /* CARRUSEL *//* CARRUSEL *//* CARRUSEL *//* CARRUSEL */
 
 /* LOGOS *//* LOGOS *//* LOGOS */
@@ -191,6 +198,7 @@ nav a:hover{
 /* LOGOS *//* LOGOS *//* LOGOS */
 
 /* SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2  */
+@media(max-width:1920px){
 .sec2{
     padding: 5% 0 3% 0;
     display: flex;
@@ -213,17 +221,14 @@ nav a:hover{
     font-size: 6rem;
     text-align: center;
 }
-
+}
 /* SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2  */
-
-
-
-
-
 .sec3{
     background-color: var(--bgcolor);
     height: 80vh;
 }
+/* FOOTER FOOTER FOOTER FOOTER */
+@media(max-width:1920px){
 footer{
     height: 35vh;
     background-color: #f5f6fa ;
@@ -253,12 +258,13 @@ footer{
 .ftcont3 i{
     font-size: 4rem;
 }
+}
+/* FOOTER FOOTER FOOTER FOOTER */
 ::-webkit-scrollbar{
     display: none;
 }
-.caja{
-    display: none;
-}
+
+/* RESPONSIVE MOBILE RESPONSIVE MOBILE RESPONSIVE MOBILE */
 @media(max-width:720px){
     header{
         display: flex;
@@ -269,16 +275,20 @@ footer{
         flex-direction: column;
     }
     .texto1 h1{
-        padding: 1% 3% 0 3%;
+        padding: 5% 3% 4% 3%;
         font-size: 4rem;
+        line-height: 100%;
     } 
     header img{
         width: 30%;
         height: 100%;
     }
-    .sec1izq button{
-        margin: 4% 0 0 0;
+    .sec1izq button ,.sec1der button{
+        margin:10% 0 5% 0;
         border-style: none;
+    }
+    .sec1izq p,.sec1der p{
+        margin:0 5% 0 5%;
     }
     header .las{
         display: block;
@@ -303,6 +313,7 @@ footer{
         align-items: center;
     }
 
+    /* MENU HAMBURGESA */  /* MENU HAMBURGESA */  /* MENU HAMBURGESA */  /* MENU HAMBURGESA */
     .caja{
         display: none;
     }
@@ -328,7 +339,7 @@ footer{
         border-radius: 5px;
         text-align: center;
         height: 5%;
-        width: 50%;
+        width: 60%;
     }
     .visible a:hover{
         background-color: var(--yellow);
@@ -338,8 +349,10 @@ footer{
         width: 50%;
         margin: 2% auto 5% auto;
     }
-    
+    /* MENU HAMBURGESA */  /* MENU HAMBURGESA */  /* MENU HAMBURGESA */  /* MENU HAMBURGESA */
+
 }
+
 /* .caja{
     position: absolute;
     display: block;
