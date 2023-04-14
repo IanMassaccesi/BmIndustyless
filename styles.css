@@ -1,0 +1,17 @@
+.visible{
+    animation: aparecer .6s linear;
+    opacity: 1;
+}
+  
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: .98;
+    }
+} 
+
