@@ -256,7 +256,9 @@ footer{
 ::-webkit-scrollbar{
     display: none;
 }
-
+.caja{
+    display: none;
+}
 @media(max-width:720px){
     header{
         display: flex;
