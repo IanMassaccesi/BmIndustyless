@@ -5,13 +5,25 @@
   
 @keyframes aparecer {
     0%{
-        opacity: 0;
+        transform: translateX(-100%);
     }
     50%{
-        opacity: .5;
+        transform: translateX(-50%);
     }
     100%{
-        opacity: .98;
+        transform: translateX(0%);
+    }
+} 
+
+@keyframes desaparecer {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-100%);
     }
 } 
 

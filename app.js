@@ -101,6 +101,7 @@ funcionesCambioClases.forEach((funcion, index) => {
 
 hamburgesa.addEventListener("click", e =>{
     caja.classList.toggle("visible")
+    caja.classList.toggle("apagada")
 })
 
 
