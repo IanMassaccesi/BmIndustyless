@@ -230,6 +230,10 @@ nav a:hover{
     cursor: pointer;
 }
 /* SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2  */
+
+
+
+
 /* SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3 */
 .sec3{
     background-color: var(--bgcolor);
@@ -285,9 +289,6 @@ textarea{
     transition: .4s ease;
 }
 /* SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3 */
-
-
-
 
 
 
@@ -501,21 +502,40 @@ footer{
     /* FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  */
 }
 /* RESPONSIVE MOBILE RESPONSIVE MOBILE RESPONSIVE MOBILE */
-@media(max-width:1024px){
-    .sec1cont{
+
+
+/* TABLET RESPONSIVE*//* TABLET RESPONSIVE*//* TABLET RESPONSIVE*//* TABLET RESPONSIVE*/
+@media only screen and (min-width: 720px) and (max-width: 1024px)  {
+    header img{
+        width: 25%;
+    }
+    header{
+        justify-content: space-around;
+        padding: 1% 0 3% 0;
+    }
+    nav{
+        width: 50%;
+    }
+    nav a {
+        font-size: 2rem;
+    }
+    .cont{
         display: flex;
         flex-direction: column;
     }
-}
-/* TABLET RESPONSIVE*/
+    .sec1 button{
+        margin: 5% 0 5% 0;
+        height: 100px;
+    }
+    }
+/* TABLET RESPONSIVE*//* TABLET RESPONSIVE*//* TABLET RESPONSIVE*//* TABLET RESPONSIVE*/
 
 
 /* ANIMACIONES */ /* ANIMACIONES *//* ANIMACIONES *//* ANIMACIONES */
 .visible{
     animation: aparecer .6s linear;
     opacity: 1;
-}
-  
+}  
 @keyframes aparecer {
     0%{
         transform: translateX(-100%);
@@ -528,6 +548,10 @@ footer{
     }
 } 
 /* ANIMACIONES *//* ANIMACIONES *//* ANIMACIONES *//* ANIMACIONES */
+
+
+
+
 ::-webkit-scrollbar{
     display: none;
 }
