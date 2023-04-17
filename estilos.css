@@ -500,7 +500,34 @@ footer{
     }
     /* FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  */
 }
+/* RESPONSIVE MOBILE RESPONSIVE MOBILE RESPONSIVE MOBILE */
+@media(max-width:1024px){
+    .sec1cont{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* TABLET RESPONSIVE*/
 
+
+/* ANIMACIONES */ /* ANIMACIONES *//* ANIMACIONES *//* ANIMACIONES */
+.visible{
+    animation: aparecer .6s linear;
+    opacity: 1;
+}
+  
+@keyframes aparecer {
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+} 
+/* ANIMACIONES *//* ANIMACIONES *//* ANIMACIONES *//* ANIMACIONES */
 ::-webkit-scrollbar{
     display: none;
 }
