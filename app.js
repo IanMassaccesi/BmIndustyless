@@ -14,9 +14,7 @@ const funcionesCambioClases = [
     cambiarClasesG5,
     cambiarClasesG6,
 ];
-const hamburgesa = document.querySelector("#hamburguesa");
-const caja = document.querySelector(".caja");
-const texto = document.createElement("a")
+
 
 
 function cambiarClasesG1() {
@@ -94,17 +92,6 @@ function cambiarClasesG6() {
     }
 }
 
-
-funcionesCambioClases.forEach((funcion, index) => {
-        setTimeout(funcion, (index + 1) * 3000);
-});
-
-hamburgesa.addEventListener("click", e =>{
-    caja.classList.toggle("visible")
-    caja.classList.toggle("apagada")
-})
-
-
 boton.addEventListener("click", cambiarClasesG1);
 boton2.addEventListener("click", cambiarClasesG2);
 boton3.addEventListener("click", cambiarClasesG3);
@@ -112,3 +99,17 @@ boton4.addEventListener("click", cambiarClasesG4);
 boton5.addEventListener("click", cambiarClasesG5);
 boton6.addEventListener("click", cambiarClasesG6);
 
+
+funcionesCambioClases.forEach((funcion, index) => {
+    setTimeout(funcion, (index + 1) * 3000);
+});
+
+const hamburgesa = document.querySelector("#hamburguesa");
+const caja = document.querySelector(".caja");
+
+
+
+hamburgesa.addEventListener("click", e =>{
+caja.classList.toggle("visible")
+caja.classList.toggle("apagada")
+})
